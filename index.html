@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Hero Background — WebGL Shader Demo</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- ─── Hero Section ─────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+
+    <!-- WebGL canvas is injected here by JS -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Subtle overlay for text readability -->
+    <div class="hero__overlay"></div>
+
+    <!-- Foreground content -->
+    <div class="hero__content">
+      <span class="hero__badge">Premium Experience</span>
+
+      <h1 class="hero__heading">
+        Crafted for the<br />
+        <em>extraordinary.</em>
+      </h1>
+
+      <p class="hero__subtext">
+        A living, breathing gradient surface — built entirely with WebGL shaders.
+        Smooth, organic, and endlessly fluid.
+      </p>
+
+      <a href="#" class="hero__cta">
+        Get Started
+        <svg class="hero__cta-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ─── WebGL Fallback (shown only if WebGL unavailable) ─────────── -->
+  <div class="webgl-fallback" id="webgl-fallback" hidden>
+    <div class="webgl-fallback__inner"></div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+
+</body>
+</html>
